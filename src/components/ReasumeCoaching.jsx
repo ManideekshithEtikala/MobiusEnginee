@@ -79,8 +79,8 @@ const ResumeCoaching = () => {
           </ul>
 
           {/* Button */}
-          <div className="mt-4 bg-blue-600 text-white rounded-full px-6 py-2 font-sora flex items-center justify-start gap-2 text-sm hover:bg-blue-700 transition w-fit">
-          <button className="w-fit">
+          <div className="mt-4 text-white rounded-full flex justify-center items-end gap-2 text-sm w-fit h-full">
+          <button className="w-fit hover:bg-blue-700 transition bg-blue-600 text-end  px-6 py-2 rounded-full">
             Get Started →
           </button>
 

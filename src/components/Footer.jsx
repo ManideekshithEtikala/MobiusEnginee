@@ -3,10 +3,11 @@ import { FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-gray-100 py-12 px-6 md:px-12 font-sans">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+    <footer className="w-full pt-12 pb-4 px-6 md:px-12 font-sans max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
         {/* Left Column - Logo and Address */}
-        <div className="flex space-x-1 ">
+        <div className="flex flex-col items-start justify-start mb-6 col-span-2">
+        <div className="flex space-y-1 flex-col items-start">
           {/* Background Blob (big white shape) */}
 
           <div className="relative w-[80px] h-[60px]">
@@ -54,38 +55,38 @@ const Footer = () => {
               />
             </svg>
           </div>
-          <div>
+
             <h1 className="text-2xl font-bold text-[#0649E7] font-sora" style={{ fontFamily: 'DM Sans' }}>
               MobiusEngine
             </h1>
-          </div>
+        </div>
+        <div className="flex items-start justify-around text-[#0649E7] px-2 py-4">
+            <div className="flex flex-col items-start justify-start mb-6 px-4 max-w-1/2">
+                <span className="underline">Address</span>
+                <p>1875 Mission St Ste 103 #450
+                San Francisco, CA 94103</p>
+            </div>
+            <div  className="flex flex-col items-start justify-start mb-6 px-4 max-w-1/2">
+                <span className="underline">Email</span>
+                <p className="underline">finance@mobiusengine.ai</p>
+            </div>
+            <div className="flex flex-col items-start justify-start mb-6 px-4 max-w-1/2">
+                <span  className="underline">Telephone</span>
+                <p>650-889-6026</p>
+            </div>
+        </div>
+
         </div>
 
         {/* Right Column - Social Links and Legal */}
-        <div className="flex flex-col justify-between">
+        <div className="flex flex-col items-end col-span-1">
           {/* Social Icons - Placeholder circles */}
           <div className="flex space-x-4 mb-8 md:mb-0">
-            <div className="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center">
-              <FaLinkedin className="text-gray-500" />
+            <div className="w-10 h-10 rounded-full border-1 border-[#0649E7] flex items-center justify-center">
+              <FaLinkedin className="text-[#0649E7]" />
             </div>
-            <div className="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center">
-              <FaTwitter className="text-gray-500" />
-            </div>
-            <div className="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center">
-              <FaFacebook className="text-gray-500" />
-            </div>
-          </div>
-
-          {/* Legal Text */}
-          <div className="space-y-2 text-gray-500 text-sm">
-            <p>© 2023 Mobiusservices LLC</p>
-            <div className="flex space-x-4">
-              <a href="#" className="hover:text-gray-700">
-                Terms & Conditions
-              </a>
-              <a href="#" className="hover:text-gray-700">
-                Privacy Policy
-              </a>
+            <div className="w-10 h-10 rounded-full border-1 border-[#0649E7] flex items-center justify-center">
+              <FaLinkedin className="text-[#0649E7]" />
             </div>
           </div>
         </div>
@@ -95,3 +96,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+
+

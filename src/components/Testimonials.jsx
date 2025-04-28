@@ -4,7 +4,7 @@ import { FaPlay } from "react-icons/fa";
 
 const Testimonials = () => {
   return (
-    <section className="w-full px-8 py-16 space-y-12 bg-white">
+    <section className="w-full px-8 py-16 space-y-12 bg-white" style={{ fontFamily: 'DM Sans' }}>
         <div className="max-w-5xl mx-auto">
       {/* Heading */}
       <h2 className="text-2xl md:text-4xl font-medium text-start mb-12 text-[#0649E7]" style={{fontFamily:'DM Sans'}}>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
-import { FaRocket } from "react-icons/fa"; // Added for the logo
 
 const Navbar = () => {
   const [moreOpen, setMoreOpen] = useState(false);

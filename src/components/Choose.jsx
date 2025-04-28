@@ -3,7 +3,7 @@ import { FaHandshake, FaUser, FaStar } from "react-icons/fa";
 
 const Choose = () => {
   return (
-    <section className="w-full flex justify-center px-8 py-16">
+    <section className="w-full flex justify-center px-8 py-16" style={{ fontFamily: 'DM Sans' }}>
       <div className="w-full max-w-5xl rounded-lg p-8 bg-[#F8FAFF]">
         {/* Title */}
         <h2  className="text-2xl md:text-4xl font-medium text-start mb-12 text-[#0649E7]" style={{fontFamily:'DM Sans'}}>

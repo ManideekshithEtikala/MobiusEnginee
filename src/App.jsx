@@ -6,7 +6,10 @@ function App() {
 
   return (
     <>
+    <div style={{ fontFamily: 'DM Sans' }} >
       <Landingpage />
+
+    </div>
     </>
   )
 }

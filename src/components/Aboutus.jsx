@@ -1,7 +1,7 @@
 import React from "react";
-import AshwinImage from "/public/ashwin.png"; // Add actual image path
-import NicoleImage from "/public/Nicole.png"; // Add actual image path
-import BgImage from "/public/bgaboutus.png"; // Background image
+import AshwinImage from "/ashwin.png"; // Add actual image path
+import NicoleImage from "/Nicole.png"; // Add actual image path
+import BgImage from "/bgaboutus.png"; // Background image
 import { FaLinkedinIn } from "react-icons/fa";
 
 const AboutUs = () => {
@@ -23,17 +23,18 @@ const AboutUs = () => {
         {/* Ashwin */}
         <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-8 space-y-8 md:space-y-0 w-full justify-center">
           {/* Profile Image */}
-          <div className="relative">
-            <img
-              src={AshwinImage}
-              alt="Ashwin"
-              className="w-44 h-44 object-cover rounded-full bg-white"
-            />
-            {/* LinkedIn Icon */}
-            <div className="absolute bottom-0 right-0 border-1 border-white backdrop-blur-sm w-10 h-10 rounded-full flex items-center justify-center">
-              <FaLinkedinIn className=" text-xl text-white " />
-            </div>
-          </div>
+          <div className="relative group overflow-hidden">
+  <img
+    src={AshwinImage}
+    alt="Ashwin"
+    className="w-44 h-44 rounded-full object-cover object-top 
+                bg-white"
+  />
+  {/* LinkedIn Icon remains the same */}
+  <div className="absolute bottom-0 right-0 border-1 border-white backdrop-blur-sm w-10 h-10 rounded-full flex items-center justify-center">
+    <FaLinkedinIn className="text-xl text-white" />
+  </div>
+</div>
 
           {/* Description */}
           <div className="text-white text-sm md:text-base font-dmsans text-center md:text-left max-w-lg">
@@ -51,18 +52,18 @@ const AboutUs = () => {
         </div>
 
         {/* Nicole */}
-        <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-8 justify-center space-y-8 md:space-y-0 w-full">
+        <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-8 space-y-8 md:space-y-0 w-full justify-center">
           {/* Profile Image */}
-          <div className="relative">
+          <div className="relative group overflow-hidden">
             <img
               src={NicoleImage}
               alt="Nicole"
-              className="w-44 h-44 object-cover rounded-full bg-white"
+              className="w-44 h-44 rounded-full object-cover object-top bg-white"
             />
             {/* LinkedIn Icon */}
             <div className="absolute bottom-0 right-0 border-1 border-white backdrop-blur-sm w-10 h-10 rounded-full flex items-center justify-center">
-              <FaLinkedinIn className=" text-xl text-white " />
-            </div>
+    <FaLinkedinIn className="text-xl text-white" />
+  </div>
           </div>
 
           {/* Description */}

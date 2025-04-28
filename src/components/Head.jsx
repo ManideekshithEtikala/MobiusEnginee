@@ -1,5 +1,5 @@
 import React from "react";
-import Ebookdownload from "/public/Ebookdownload.png";
+import Ebookdownload from "/Ebookdownload.png";
 import { GoArrowDownLeft } from "react-icons/go";
 
 const Head = () => {

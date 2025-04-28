@@ -43,8 +43,8 @@ const plans = [
 
 const PricingPlans = () => {
   return (
-    <section className="w-full min-h-screen flex flex-col items-center justify-center px-8 py-12 bg-[#F8FAFC]">
-    <div className="max-w-5xl mx-auto">
+    <section className="w-full min-h-screen flex flex-col items-center justify-center px-8 py-12 ">
+    <div className="max-w-5xl mx-auto ">
 
       {/* Heading */}
       <h2 className="max-w-5xl flex flex-col items-start justify-start text-[#0649E7] text-4xl font-semibold mb-12 text-start" style={{ fontFamily: 'DM Sans' }}>

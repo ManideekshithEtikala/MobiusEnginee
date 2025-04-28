@@ -9,10 +9,11 @@ import Choose from "./Choose.jsx";
 import ReasumeCoaching from "./ReasumeCoaching.jsx";
 import Footer from "./Footer.jsx";
 import EndComponent from "./EndComponent.jsx";
+import PricingCard from "./PricingCard.jsx";
 const Landingpage = () => {
   return (
     <div className="font-sans text-gray-900">
-      <div className="bg-[url(/public/headnavbg.png)] bg-cover bg-center flex flex-col items-center justify-center relative">
+      <div className="bg-[url(/headnavbg.png)] bg-cover bg-center flex flex-col items-center justify-center relative">
         <Navbar />
         <Head />
       </div>
@@ -29,7 +30,7 @@ const Landingpage = () => {
 
       {/* Pricing Plans */}
       <PricingPlans />
-
+<PricingCard />
       {/* Contact Section */}
       <ReasumeCoaching />
 
